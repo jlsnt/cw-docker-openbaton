@@ -1,0 +1,33 @@
+{
+	"vendor":"rsx218_DL",
+	"version":"0.1",
+	"name":"etcd",
+        "type":"etcd",
+	"endpoint":"docker",
+	"vdu":[{
+		"vm_image":[],
+		"vdu_constraint":"",
+                "scale_in_out":2,
+		"vnfc":[{
+			"connection_point":[{
+				"virtual_link_reference":"clearwater"
+			}]
+		}]
+	}],
+	"configurations":{
+		"name":"configuration",
+		"configurationParameters":[
+			{
+				"confKey":"Command",
+				"value":"-name etcd0 -advertise-client-urls http://etcd:2379,http://etcd:4001 -listen-client-urls http://0.0.0.0:2379,http://0.0.0.0:4001 -initial-advertise-peer-urls http://etcd:2380 -listen-peer-urls http://0.0.0.0:2380 -initial-cluster etcd0=http://etcd:2380 -initial-cluster-state new"
+			}
+		]
+	},
+	"virtual_link":[{
+		"name":"clearwater"
+	}],
+	"lifecycle_event":[],
+	"deployment_flavour":[{
+		"flavour_key":"m1.small"
+	}]
+}

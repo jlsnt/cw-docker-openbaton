@@ -1,0 +1,19 @@
+name: homestead-prov
+description: homestead-prov
+provider: rsx218_DL
+nfvo_version: 6.0.0
+vim_types:
+ - docker
+image:
+    upload: "false"
+    names:
+        - "ollivier/clearwater-homestead-prov:latest"
+    link: "ollivier/clearwater-homestead-prov:latest"
+image-config:
+    name: "ollivier/clearwater-homestead-prov:latest"
+    diskFormat: QCOW2
+    containerFormat: BARE
+    minCPU: 0
+    minDisk: 0
+    minRam: 0
+    isPublic: false

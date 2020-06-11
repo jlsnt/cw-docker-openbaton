@@ -1,0 +1,19 @@
+name: etcd
+description: etcd
+provider: rsx218_DL
+nfvo_version: 6.0.0
+vim_types:
+ - docker
+image:
+    upload: "false"
+    names:
+        - "quay.io/coreos/etcd:v2.2.5"
+    link: "quay.io/coreos/etcd:v2.2.5"
+image-config:
+    name: "quay.io/coreos/etcd:v2.2.5"
+    diskFormat: QCOW2
+    containerFormat: BARE
+    minCPU: 0
+    minDisk: 0
+    minRam: 0
+    isPublic: false

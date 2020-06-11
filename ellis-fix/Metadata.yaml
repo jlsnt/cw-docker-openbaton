@@ -1,0 +1,19 @@
+name: ellis
+description: ellis
+provider: rsx218_DL
+nfvo_version: 6.0.0
+vim_types:
+ - docker
+image:
+    upload: "false"
+    names:
+        - "ellis-fix:latest"
+    link: "ellis-fix:latest"
+image-config:
+    name: "ellis-fix:latest"
+    diskFormat: QCOW2
+    containerFormat: BARE
+    minCPU: 0
+    minDisk: 0
+    minRam: 0
+    isPublic: false

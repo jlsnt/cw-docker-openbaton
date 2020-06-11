@@ -1,0 +1,19 @@
+name: chronos
+description: chronos
+provider: rsx218_DL
+nfvo_version: 6.0.0
+vim_types:
+ - docker
+image:
+    upload: "false"
+    names:
+        - "ollivier/clearwater-chronos:latest"
+    link: "ollivier/clearwater-chronos:latest"
+image-config:
+    name: "ollivier/clearwater-chronos:latest"
+    diskFormat: QCOW2
+    containerFormat: BARE
+    minCPU: 0
+    minDisk: 0
+    minRam: 0
+    isPublic: false
